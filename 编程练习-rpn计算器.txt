@@ -1,0 +1,69 @@
+编程练习-rpn计算器
+programming exercise -rpn calculator
+
+some of the best calculatiors in the world have an "RPN"(reverse polish notation)mode.
+we would like you to write a command-line based RPN calculator.
+
+requirements
+the calculator has a stack that can contain real numbers.
+the calculatoe waits fro user input and expects torecieve strings containing whitespace separated lists of numbers andoperators.
+
+numbers are pushed on to the stack.Operators operate on numbers that are on the stack.
+available operators are +,-,*,/,sqrt,undo,clear.
+
+operators pop their parameters off the stack,and push their results back onto the stack.
+
+the 'clear' operator removes all items from the stack.
+the 'undo' operators undoes the previous operation."undo undo" will undo the previo us two operations.
+
+sqrt performs a square root on the top item from the stack.
+
+the +, -, *, /,operators perform addition,subtraction,multiplication and division respectively on the two items from the stack.
+
+after processing an input string,the calculator displays the current contents of the stack as a space-separated list.
+
+Numbers should be stored on the stack to at least 15 decimal places of precision.but displayed to 10 decimal places(or less if it causes no loss of precision).
+
+all numbers should be formatted as plain decimal strings(ie.noengineering formatting).
+
+if an operator cannot find a sufficient number of parameters on the stack,a warning is displayed:operator<operator>(position:<pos>):insufficient parameters.
+
+after displaying the warning,all further processing of the string terminates and the current state of the stack is displayed.
+
+
+deliverables
+the solution submitted should include structure,source code,configuration and any tests or test code you deem necessary -no need
+
+to package class files.
+solve the problem in java or kotlin.
+solve the problem as though it were"production level"code.
+it is not required to provide any graphical interface.
+in order to get around firewall issues we recommend the solution be packaged as a password proteced zip file or github repository link.
+
+编程练习-rpn计算器
+世界上一些最好的计算器有“RPN”（反向抛光记法）模式。
+我们希望您编写一个基于命令行的RPN计算器。
+
+要求
+计算器有一个可以包含实数的堆栈。
+计算器等待用户输入，并期望接收包含空格分隔的数字和运算符列表的字符串。
+数字被推送到堆栈。运算符对堆栈上的数字进行操作。
+可用的运算符有+、-、*、/、sqrt、undo、clear。
+操作符从堆栈中弹出参数，并将结果推回到堆栈中。
+“clear”操作符从堆栈中删除所有项。
+“undo”操作符撤消上一个操作。“undo undo”将撤消前两个操作。
+sqrt对堆栈的顶部项执行平方根运算。
++、-、*和/运算符分别对堆栈中的两个项目执行加法、减法、乘法和除法。
+处理输入字符串后，计算器将堆栈的当前内容显示为空格分隔的列表。
+数字应存储在堆栈中，精度至少为15位小数，但显示为10位小数（如果不会导致精度损失，则显示为10）。
+所有数字都应格式化为纯十进制字符串（即工程格式）。
+如果操作员在堆栈上找不到足够数量的参数，将显示警告：operator＜operator＞（位置：＜pos＞）：参数不足。
+显示警告后，字符串的所有进一步处理都将终止，并显示堆栈的当前状态。
+
+可交付成果
+提交的解决方案应包括结构、源代码、配置以及您认为必要的任何测试或测试代码-无需
+打包类文件。
+用java或kotlin解决问题。
+解决问题，就像它是“生产级”代码一样。
+不需要提供任何图形界面。
+为了解决防火墙问题，我们建议将解决方案打包为受密码保护的zip文件或github存储库链接。
